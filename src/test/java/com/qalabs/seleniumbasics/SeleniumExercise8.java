@@ -30,7 +30,7 @@ public class SeleniumExercise8 {
 
         WebElement passwordInputElement = driver.findElement(By.id("pass"));
         passwordInputElement.clear();
-        passwordInputElement.sendKeys("A cuspide corona");
+        passwordInputElement.sendKeys("");
 
         WebElement loginButtonElement = driver.findElement(By.xpath("//input[@id='u_0_2']"));
         loginButtonElement.click();
