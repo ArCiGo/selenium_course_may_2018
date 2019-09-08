@@ -1,4 +1,6 @@
-# QA Minds
-## Automation Testing bootcam
+# Selenium Course, September 2019
 
-Armando Cifuentes González
+###### Bootcamp sponsored by QA Minds & Codeando México
+
+## Contributing
+* [Armando Cifuentes González](https://www.linkedin.com/in/arcigo/)
