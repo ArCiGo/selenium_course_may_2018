@@ -1,0 +1,11 @@
+target/
+src/test/java/com/qalabs/seleniumbasics/SeleniumExercise1.java
+src/test/java/com/qalabs/seleniumbasics/SeleniumExercise2.java
+src/test/java/com/qalabs/seleniumbasics/SeleniumExercise3.java
+src/test/java/com/qalabs/seleniumbasics/SeleniumExercise4.java
+src/test/java/com/qalabs/seleniumbasics/SeleniumHandsOn1.java
+src/test/java/com/qalabs/seleniumbasics/SeleniumHandsOn2.java
+src/test/java/com/qalabs/seleniumbasics/SeleniumHandsOn3.java
+src/test/java/com/qalabs/seleniumbasics/SeleniumHandsOn4.java
+src/test/java/com/qalabs/seleniumbasics/SeleniumHandsOn5.java
+src/test/java/com/qalabs/seleniumbasics/SeleniumHandsOn6.java
