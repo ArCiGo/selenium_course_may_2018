@@ -13,6 +13,7 @@ public class FacebookLogin {
         WebDriver myDriver = WebDriverFactory.getDriver(browser);
         //acebook page and print current url
         myDriver.get("https://www.facebook.com");
+
         WebElement myElement = myDriver.findElement(By.id("email"));
         myElement.sendKeys("gmorenogaby@hotmail.com");
         myElement = myDriver.findElement(By.id("pass"));

@@ -22,9 +22,11 @@ public class FacebookLogin1 {
         myElement = myDriver.findElement(By.id("u_0_2"));
         myElement.click();
         myDriver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+
         myElement = myDriver.findElement(By.name("q"));
         myElement.sendKeys("QA Minds");
         myElement.submit();
+
         myDriver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         Thread.sleep(5000);
         myDriver.close();

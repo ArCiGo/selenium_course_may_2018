@@ -9,19 +9,19 @@ public class SearchGoogle {
         // Define which browser to use
         String browser = "chrome";
         //String url = "https://www.mozilla.org";
-        String url = "https://www.google.com";
+        WebDriver testDriver = WebDriverFactory.getDriver(browser);
+        testDriver.get("https://www.google.com");
 
         // Get correct driver for desire browser
-        WebDriver myDriver = WebDriverFactory.getDriver(browser);
-        // get google home page
-        myDriver.get(url);
-        String currentUrl = myDriver.getCurrentUrl();
-        assert currentUrl.equals(url) : "the url is no correct";
-        WebElement myElement = myDriver.findElement(By.name("q"));
+        assert testDriver.getCurrentUrl().equals("https://google.com.mx"): "El path no es el de Google";
+
+        WebElement myElement =testDriver.findElement(By.className("gLFyf"));
+
         myElement.sendKeys("selenium");
         myElement.submit();
+
         Thread.sleep(5000);
-        myDriver.close();
+        testDriver.close();
 
     }
 
