@@ -1,0 +1,25 @@
+
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+i
+9src/main/java/com/qalabs/javabasics/AssertionExample.java,8/b/8b178072f712f082a7906508fcbc42d759a4f16e
+n
+>src/test/java/com/qalabs/seleniumbasics/SeleniumExercise9.java,2/b/2b1d4e86897981c299e02dcff440d0a446d7a802
+n
+>src/test/java/com/qalabs/seleniumbasics/SeleniumExercise8.java,c/6/c6d8c7045a5c78138ba89f118da4465b8bb9bcea
+n
+>src/test/java/com/qalabs/seleniumbasics/SeleniumExercise7.java,2/3/23ccd2525343e691b8370111b92680398fdf95cf
+n
+>src/test/java/com/qalabs/seleniumbasics/SeleniumExercise6.java,4/2/4202cb6688fe97b49cf7cf799522b6cada0fa2e0
+n
+>src/test/java/com/qalabs/seleniumbasics/SeleniumExercise5.java,9/f/9f078b943b6c537bc25b811985fef04db5099c53
+n
+>src/test/java/com/qalabs/seleniumbasics/SeleniumExercise4.java,8/9/8921b8d84e0603ff6b6f6855e778490a1fbba7aa
+n
+>src/test/java/com/qalabs/seleniumbasics/SeleniumExercise3.java,4/4/441250acb6e28ceed30e1d036a75ce1551011fe3
+m
+=src/test/java/com/qalabs/seleniumbasics/SeleniumHandsOn1.java,6/9/69fd123886b12d3d9e08b4ea63d3b2108db5ca2d
+o
+?src/test/java/com/qalabs/seleniumbasics/SeleniumExercise10.java,5/9/5937930df3f76ff8d469e725e52707327f66c3c6
+o
+?src/test/java/com/qalabs/seleniumbasics/SeleniumExercise11.java,4/f/4fcf5817c959cac89717e4bdc3b527baca8658be

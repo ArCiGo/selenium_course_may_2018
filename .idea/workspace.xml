@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4f23a5a-af49-47fe-9337-215d8e761898" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise11.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise8.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SeleniumExercise8">
+  <component name="RunManager" selected="Application.SeleniumExercise11">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -72,6 +72,20 @@
     </configuration>
     <configuration name="SeleniumExercise10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.SeleniumExercise10" />
+      <module name="Selenium2017" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qalabs.seleniumbasics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumExercise11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.SeleniumExercise11" />
       <module name="Selenium2017" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -131,20 +145,6 @@
       <option name="MAIN_CLASS_NAME" value="testd" />
       <module name="Selenium2017" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.testd" />
-      <module name="Selenium2017" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qalabs.seleniumbasics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -213,16 +213,16 @@
       <item itemvalue="Application.SeleniumExercise8" />
       <item itemvalue="Application.SeleniumExercise9" />
       <item itemvalue="Application.SeleniumExercise10" />
-      <item itemvalue="Application.testd" />
       <item itemvalue="Application.testd (1)" />
+      <item itemvalue="Application.SeleniumExercise11" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SeleniumExercise11" />
+        <item itemvalue="Application.SeleniumExercise10" />
         <item itemvalue="Application.SeleniumExercise8" />
         <item itemvalue="Application.SeleniumExercise9" />
         <item itemvalue="Application.testd (1)" />
-        <item itemvalue="Application.testd" />
-        <item itemvalue="Application.SeleniumExercise10" />
       </list>
     </recent_temporary>
   </component>
