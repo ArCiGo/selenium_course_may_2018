@@ -3,6 +3,7 @@ package com.qalabs.seleniumbasics;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.File;
@@ -13,8 +14,10 @@ public class PageLoadTimeOutExample {
         File rootPath = new File("src/test/resources/lib-thirdparty/driversforwin");
         if(browser.equals("chrome")) {
             File chromeFilePath = new File(rootPath, "chromedriver.exe");
+            ChromeOptions options= new ChromeOptions();
+            options.addArguments("--disable-notifications");
             System.setProperty("webdriver.chrome.driver", chromeFilePath.getPath());
-            return new ChromeDriver();
+            return new ChromeDriver(options);
         } else if (browser.equals("firefox")) {
             File firefoxFilePath = new File(rootPath, "chromedriver.exe");
             System.setProperty("webdriver.gecko.driver", firefoxFilePath.getPath());

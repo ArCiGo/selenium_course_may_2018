@@ -14,8 +14,11 @@ public class SelenuimExercise4 {
         // Get google home page
         myDriver.get("https://www.youtube.com/");
         WebElement myElement= myDriver.findElement(By.id("search"));
-        boolean displayed = myElement.isDisplayed();
-        assert displayed== true: "the element is enabled";
+        boolean displayed;
+        if (myElement.isDisplayed()) {
+            displayed = true;
+        } else displayed = false;
+        if (displayed != true) throw new AssertionError("the element is enabled");
         myElement.sendKeys("selenium");
         myElement= myDriver.findElement(By.id("search-icon-legacy"));
         myElement.click();
