@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4f23a5a-af49-47fe-9337-215d8e761898" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/ExerciseSelenium14.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise15.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,15 +65,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SeleniumExercise11">
+  <component name="RunManager" selected="Application.SeleniumExercise15">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumExercise10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.SeleniumExercise10" />
+    <configuration name="ExerciseSelenium14" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.ExerciseSelenium14" />
       <module name="Selenium2017" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -98,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumExercise8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.SeleniumExercise8" />
+    <configuration name="SeleniumExercise12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.SeleniumExercise12" />
       <module name="Selenium2017" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -112,8 +114,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumExercise9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.SeleniumExercise9" />
+    <configuration name="SeleniumExercise13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.SeleniumExercise13" />
+      <module name="Selenium2017" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qalabs.seleniumbasics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumExercise15" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.SeleniumExercise15" />
       <module name="Selenium2017" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -137,14 +153,6 @@
       <module name="Selenium2017" />
       <option name="VM_PARAMETERS" value="-enableassertions" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testd (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="testd" />
-      <module name="Selenium2017" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,19 +218,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.assertions" />
-      <item itemvalue="Application.SeleniumExercise8" />
-      <item itemvalue="Application.SeleniumExercise9" />
-      <item itemvalue="Application.SeleniumExercise10" />
-      <item itemvalue="Application.testd (1)" />
       <item itemvalue="Application.SeleniumExercise11" />
+      <item itemvalue="Application.SeleniumExercise12" />
+      <item itemvalue="Application.SeleniumExercise13" />
+      <item itemvalue="Application.ExerciseSelenium14" />
+      <item itemvalue="Application.SeleniumExercise15" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SeleniumExercise15" />
+        <item itemvalue="Application.ExerciseSelenium14" />
+        <item itemvalue="Application.SeleniumExercise13" />
+        <item itemvalue="Application.SeleniumExercise12" />
         <item itemvalue="Application.SeleniumExercise11" />
-        <item itemvalue="Application.SeleniumExercise10" />
-        <item itemvalue="Application.SeleniumExercise8" />
-        <item itemvalue="Application.SeleniumExercise9" />
-        <item itemvalue="Application.testd (1)" />
       </list>
     </recent_temporary>
   </component>
