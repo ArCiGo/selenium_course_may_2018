@@ -17,11 +17,6 @@ public class WikipediaSearch {
         // Get google home page
         myDriver.get("https://es.wikipedia.org/wiki/Wikipedia:Portada");
 
-        // Wait some seconds
-        Thread.sleep(2000);
-
-        assert myDriver.getCurrentUrl().equals("https://es.wikipedia.org/wiki/Wikipedia:Portada") : "Pagina equivocada";
-
         WebElement search = myDriver.findElement(By.id("searchInput"));
         search.click();
         String findStr = "Guadalajara";
