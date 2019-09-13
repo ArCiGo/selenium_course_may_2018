@@ -17,16 +17,15 @@ public class SeleniumExercise10 {
         WebDriver myDriver = WebDriverFactory.getDriver(browser);
         // Get google home page
         myDriver.get(url);
-        //myDriver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        myDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         WebElement myElement = myDriver.findElement(By.name("as_word"));
         myElement.sendKeys(topic);
         myElement = myDriver.findElement(By.className("nav-icon-search"));
         myElement.click();
         myElement = myDriver.findElement(By.className("lazy-load"));
         myElement.click();
-        myDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
         myDriver.close();
 
-        myDriver.quit();
     }
 }
