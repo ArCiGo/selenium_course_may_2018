@@ -1,4 +1,2 @@
-# selenium_course_may_2018
-Diego Cruz
-César Alejandro Virgen Herrera
-
+# selenium_2017_github_demo
+Luis Rivas
