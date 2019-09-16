@@ -24,13 +24,15 @@ public class SeleniumExercise15 {
         assert myDriver.getCurrentUrl().equals("https://www.amazon.com.mx") : "Pagina equivocada";
 
         List<WebElement> myLinks = myDriver.findElements(By.xpath("//a"));
+        System.out.println("Elementos buscados con XPATH://a");
         for (WebElement myLink : myLinks) {
-            myLink.getAttribute("href");
+            System.out.println(myLink.getAttribute("href"));
         }
 
         List<WebElement> myChilds = myDriver.findElements(By.xpath("//head/child::*"));
+        System.out.println("Elementos buscados con XPATH://head/child");
         for (WebElement myChild : myChilds) {
-            myChild.getText();
+            System.out.println(myChild.getText());
         }
 
 

@@ -24,7 +24,7 @@ public class SeleniumExercise9 {
 
         WebElement busqueda = myDriver.findElement(By.id("searchInput"));
         busqueda.click();
-        String topic = "The Beatles";
+        String topic = "Portugal";
         busqueda.sendKeys(topic);
         busqueda.submit();
         Thread.sleep(2000);
@@ -33,7 +33,6 @@ public class SeleniumExercise9 {
             buscarTopico(topic, myDriver);
             Thread.sleep(5000);
         }
-
 
 
         // Quit web driver
