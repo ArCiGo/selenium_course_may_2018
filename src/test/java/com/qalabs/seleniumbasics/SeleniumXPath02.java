@@ -4,19 +4,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class SeleniumHandsOn8 {
+public class SeleniumXPath02 {
 
     public static void main(String[] args) throws InterruptedException, NullPointerException {
-        SeleniumHandsOn6 sH6 = new SeleniumHandsOn6();
         String browser = "chrome";
         WebDriver testDriver = WebDriverFactory.getDriver(browser);
-        testDriver.get("https://www.google.com.mx");
+        testDriver.get("https://www.amazon.com.mx/");
 
-        testDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        testDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        WebElement myElement = testDriver.findElement(By.id("JustInvalidId"));
+        List<WebElement> myElements = testDriver.findElements(By.xpath("//a"));
+
+        for(WebElement elemento: myElements) {
+            System.out.println("a: " + elemento.getText());//getAttribute("href").toString());
+        }
 
         testDriver.close();
         testDriver.quit();

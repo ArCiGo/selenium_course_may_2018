@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class SeleniumHandsOn7 {
+public class SeleniumLocators01 {
 
     public static void main(String[] args) throws InterruptedException, NullPointerException {
         SeleniumHandsOn6 sH6 = new SeleniumHandsOn6();
