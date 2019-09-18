@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 import static java.lang.System.out;
 
 
-public class wikipedia {
+public class Wikipedia {
     public static void main(String[] args) throws InterruptedException, NullPointerException {
         // Define which browser to use
         String browser = "firefox";
