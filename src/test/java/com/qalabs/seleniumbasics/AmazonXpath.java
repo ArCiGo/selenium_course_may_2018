@@ -18,7 +18,7 @@ public class AmazonXpath {
         List<WebElement> hyperlink = myDriver.findElements(By.xpath("//a/*"));
 
         for (WebElement list : hyperlink) {
-            //System.out.println(list.getAttribute("href"));
+            System.out.println(list.getAttribute("href"));
             list.click();
             System.out.println("Hyperlink: " + myDriver.getCurrentUrl());
            // myDriver.navigate().back();

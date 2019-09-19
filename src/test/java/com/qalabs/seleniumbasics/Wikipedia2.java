@@ -32,10 +32,10 @@ public class Wikipedia2 {
 
         List<WebElement> topicElements = myDriver.findElements(By.tagName("href"));
         for (WebElement topic : topicElements) {
-            System.out.println(topic.getText());
+            //System.out.println(topic.getText());
             if (topic.getText().contains("Página")) {
                 System.out.println(topicElements);
-                break;
+              //  break;
             }
             System.out.println(myDriver.findElements(By.tagName("button")));
 
