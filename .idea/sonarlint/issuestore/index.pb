@@ -33,3 +33,13 @@ o
 ?src/test/java/com/qalabs/seleniumbasics/SeleniumExercise12.java,8/5/85a975a30ebc33d9f8996987c7fa57936903a0d6
 o
 ?src/test/java/com/qalabs/seleniumbasics/SeleniumExercise16.java,b/3/b39f563d10b92a4c2e5028fb89a6e1fce28b8b6c
+n
+>src/test/java/com/qalabs/seleniumbasics/SeleniumExercise2.java,8/3/83cd70ab41fa2cd7c4c896dc2ae737f5701111b1
+b
+2src/test/java/com/qalabs/seleniumbasics/testd.java,0/0/00818418b84d1d8c93199272b48013fcf5781622
+o
+?src/test/java/com/qalabs/seleniumbasics/SeleniumExercise17.java,5/6/5673fac845aa14d1d83072dca264236ca7073b81
+o
+?src/test/java/com/qalabs/seleniumbasics/SeleniumExercise19.java,2/a/2a76c2751777de149c844b8ad7da7eeb1d6673c0
+o
+?src/test/java/com/qalabs/seleniumbasics/SeleniumExercise18.java,e/b/eb3c68c602e6ce98a806848d8c3848c2b0749492

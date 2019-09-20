@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4f23a5a-af49-47fe-9337-215d8e761898" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise17.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise18.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/441250acb6e28ceed30e1d036a75ce1551011fe3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/441250acb6e28ceed30e1d036a75ce1551011fe3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise16.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise16.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +46,7 @@
   <component name="ProjectId" id="1QIwJCJjaZFMrn35xW7i6h1n7t1" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -67,34 +69,6 @@
   <component name="RunManager" selected="Application.SeleniumExercise17">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExerciseSelenium14" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.ExerciseSelenium14" />
-      <module name="Selenium2017" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qalabs.seleniumbasics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SeleniumExercise13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.SeleniumExercise13" />
-      <module name="Selenium2017" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qalabs.seleniumbasics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,6 +103,34 @@
     </configuration>
     <configuration name="SeleniumExercise17" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.SeleniumExercise17" />
+      <module name="Selenium2017" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qalabs.seleniumbasics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumExercise18" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.SeleniumExercise18" />
+      <module name="Selenium2017" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qalabs.seleniumbasics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumExercise19" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.SeleniumExercise19" />
       <module name="Selenium2017" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -217,19 +219,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.assertions" />
-      <item itemvalue="Application.SeleniumExercise13" />
-      <item itemvalue="Application.ExerciseSelenium14" />
       <item itemvalue="Application.SeleniumExercise15" />
       <item itemvalue="Application.SeleniumExercise16" />
       <item itemvalue="Application.SeleniumExercise17" />
+      <item itemvalue="Application.SeleniumExercise19" />
+      <item itemvalue="Application.SeleniumExercise18" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.SeleniumExercise17" />
+        <item itemvalue="Application.SeleniumExercise18" />
+        <item itemvalue="Application.SeleniumExercise19" />
         <item itemvalue="Application.SeleniumExercise16" />
         <item itemvalue="Application.SeleniumExercise15" />
-        <item itemvalue="Application.ExerciseSelenium14" />
-        <item itemvalue="Application.SeleniumExercise13" />
       </list>
     </recent_temporary>
   </component>
@@ -244,6 +246,21 @@
       <option name="presentableId" value="Default" />
       <updated>1506482396652</updated>
     </task>
+    <task id="LOCAL-00001" summary="Create of test exercise 19">
+      <created>1568924646168</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568924646168</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update of exercise 17">
+      <created>1568994876350</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568994876350</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,6 +275,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create of test exercise 19" />
+    <MESSAGE value="Update of exercise 17" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update of exercise 17" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
