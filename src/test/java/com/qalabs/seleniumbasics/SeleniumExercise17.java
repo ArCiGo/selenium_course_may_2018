@@ -42,9 +42,13 @@ public class SeleniumExercise17 {
         Select dropdownElement = new Select(searchDropdownElement);
         dropdownElement.selectByValue("BY_PRICE_ASCENDING");
 
-        WebElement firstElement = driver.findElement(By.xpath("//div[@id='101_dealView_0']/descendant::div[@class='a-row a-spacing-mini'][3]/div/span"));
-        wait.until(ExpectedConditions.visibilityOf(firstElement));
-        System.out.println("Texto: " +firstElement.getText());
+        WebElement firstElementText = driver.findElement(By.xpath("//div[@id='101_dealView_0']//a[@id='dealTitle']/span"));
+        wait.until(ExpectedConditions.visibilityOf(firstElementText));
+
+        WebElement firstElementPrice  = driver.findElement(By.xpath("//div[@id='101_dealView_0']/descendant::div[@class='a-row a-spacing-mini'][3]/div/span"));
+        wait.until(ExpectedConditions.visibilityOf(firstElementPrice));
+
+        System.out.println("Producto: " + firstElementText.getText() + ". Precio: " + firstElementPrice.getText());
 
         driver.close();
         driver.quit();
