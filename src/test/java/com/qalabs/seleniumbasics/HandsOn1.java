@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.concurrent.TimeUnit;
 
-public class HansOn1 {
+public class HandsOn1 {
 
     public static void main(String[] args) throws NullPointerException {
         String browser = "chrome";

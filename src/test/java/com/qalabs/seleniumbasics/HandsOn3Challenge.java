@@ -13,10 +13,11 @@ public class HandsOn3Challenge {
         String browser = "chrome";
         WebDriver myDriver = WebDriverFactory.getDriver(browser);
 
+        myDriver.manage().window().maximize();
         myDriver.navigate().to("https://www.inaturalist.org");
         myDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        WebElement dropDown = myDriver.findElement(By.xpath("//*[@id=\"header-more-dropdown-toggle\"]"));
+        WebElement dropDown = myDriver.findElement(By.xpath("        action.moveToElement(searchResults).perform();\n"));
         dropDown.click();
 
         WebElement places = myDriver.findElement(By.xpath("//a[contains(text(),'Places')]"));
