@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.concurrent.TimeUnit;
 
-public class SeleniumXPath04 {
+public class SeleniumCSS01 {
 
     public static void main(String[] args) throws InterruptedException, NullPointerException {
         String browser = "chrome";
@@ -15,18 +15,17 @@ public class SeleniumXPath04 {
 
         testDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        WebElement myElement = testDriver.findElement(By.xpath("//input[@type='text']"));
-        myElement.sendKeys("fifth element nutrition");
-        WebElement myButton = testDriver.findElement(By.xpath("//input[@class='nav-input' and @type='submit']"));
-        myButton.click();
-
-        myElement = testDriver.findElement(By.xpath("//img[@class='s-image']"));
+        WebElement myElement = testDriver.findElement(By.xpath("//a[contains(text(),'Promociones')]"));
         myElement.click();
 
-        testDriver.close();
+        myElement = testDriver.findElement(By.xpath("//span[contains(text(),'Accesorios electrónicos')]/preceding::input[@type='checkbox']"));
+        myElement.click();
 
-        testDriver.quit();
+        myElement = testDriver.findElement(By.xpath("//span[contains(text(),'Ofertas destacadas')]/preceding::input[@type='checkbox']"));
+        myElement.click();
 
+       // testDriver.close();
 
+       // testDriver.quit();
     }
 }
