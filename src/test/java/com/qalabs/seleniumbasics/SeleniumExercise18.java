@@ -22,21 +22,25 @@ public class SeleniumExercise18 {
         driver.navigate().to("https://www.espn.com.mx/");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        List<WebElement> divLeaguesListElements = driver.findElements(By.xpath("//div[@id='global-viewport']/descendant::section[@id='global-scoreboard']/descendant::div[@class='scores-carousel']/ul/li/div/div[@data-league]"));
-        for (WebElement item : divLeaguesListElements) {
-            System.out.println(item.getAttribute("data-league"));
-        }
+        System.out.println("Scores");
 
-        List<WebElement> divScoresListElements = driver.findElements(By.xpath("//div[@id='global-viewport']/descendant::section[@id='global-scoreboard']/descendant::div[@class='scores-carousel']/ul/li/div/div[@data-league]/following-sibling::div"));
-        for (WebElement item : divScoresListElements) {
-            if(item.getAttribute("class").contains("cscore--away-winner")) {
-                WebElement awayWinnerElement = item.findElement(By.xpath("./*[contains(@class, 'cscore_link')]/descendant::ul/li[1]/div[contains(@class, 'cscore_team')]/div[contains(@class, 'cscore_score')]/span"));
+        List<WebElement> finalScores = driver.findElements(By.cssSelector(".cscore--final"));
+        WebElement winner, score;
+        String league;
 
-                System.out.println("Score: " + awayWinnerElement.getText());
-            } else if(item.getAttribute("class").contains("cscore--home-winner")) {
-                WebElement homeWinnerElement = item.findElement(By.xpath("./*[contains(@class, 'cscore_link')]/descendant::ul/li[1]/div[contains(@class, 'cscore_team')]/div[contains(@class, 'cscore_score')]/span"));
+        for (int i = 0; i < finalScores.size(); i++) {
+            league = driver.findElement(By.xpath("(//div[contains(@class,'cscore--final')])[" + i + "]/preceding::h2[contains(@class, 'scoreLabel_title')][1]")).getAttribute("innerHTML");
 
-                System.out.println("Score: " + homeWinnerElement.getText());
+            if(finalScores.get(i).getAttribute("class").contains("cscore--away-winner")) {
+                winner = finalScores.get(i).findElement(By.cssSelector(".cscore_item--away"));
+                score = winner.findElement(By.cssSelector("span[class='cscore_name cscore_name--long']"));
+
+                System.out.println(league + ". Away winner: " + score.getAttribute("innerHTML"));
+            } else if(finalScores.get(i).getAttribute("class").contains("csclre--home-winner")) {
+                winner = finalScores.get(i).findElement(By.cssSelector(".cscore_item--away"));
+                score = winner.findElement(By.cssSelector("span[class='cscore_name cscore_name--long']"));
+
+                System.out.println(league + ". Home winner: " + score.getAttribute("innerHTML"));
             }
         }
 
