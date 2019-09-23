@@ -13,35 +13,36 @@ public class HandsOn2 {
         WebDriver myDriver;
         myDriver = WebDriverFactory.getDriver(browser);
 
+        assert myDriver != null;
         myDriver.manage().window().maximize();
         myDriver.navigate().to("https://www.espn.com.mx/");
         myDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        List<WebElement> searchLeage = myDriver.findElements(By.cssSelector("div[class='scoreLabel_content']"));
-        searchLeage.size();
-        System.out.println("---------------------------------------------------\n" + "***Leagues are: " + searchLeage.size());
 
-        for (WebElement element : searchLeage) {
-            System.out.println("---------------------------------------------------------\n" + "\nThe Leage name are: " + element.getText() + "\n--------------------------------------------------------\n");
-            System.out.println("\n");
-            System.out.print("**Games played**");
 
-        for (WebElement item : searchLeage) {
-                if (item.getText().contains("F")) {
-                    System.out.println("----------------------------------------------------------------\n");
-                    System.out.println(item.getText());
-                }
+    List<WebElement> myElements =(List<WebElement>) myDriver.findElements(By.cssSelector(".cscore--final']"));
+        WebElement myElemento;
+        WebElement myElementos;
+    int i = 1;
+    String leage;
+     for(WebElement myElement : myElements ) {
+         leage = myDriver.findElement(By.xpath("(//div[contains(@class,'cscore--final')])[" + i + "]/preceding::h2[contains(@class, 'scoreLabel_title')][1]")).getAttribute("innerHTML");
+            if(myElement.getAttribute("class").contains("cscore--away-winner")){
+                myElemento = myElement.findElement(By. cssSelector(".cscore_item--away"));
+                myElementos = myElement.findElement(By.cssSelector("span[class='cscore_name cscore_name--long']"));
+                System.out.println("The leage is: " + leage +":" + "\n---------------------------------------------------\n" + "The winner visit is: " + myElementos.getAttribute("innerHTML"));
+
+            }else if(myElement.getAttribute("class").contains("cscore--home-winner")){
+                myElement = myElement.findElement(By.cssSelector(".cscore_item--home"));
+                myElementos = myElement.findElement(By.cssSelector("span[class='cscore_name cscore_name--long']"));
+                System.out.println("The leage is: " + leage +":" + "\n---------------------------------------------------\n" + "The winner local is: " + myElementos.getAttribute("innerHTML"));
             }
-            List<WebElement> myElementsGameDiv = myDriver.findElements(By.cssSelector("div[class='cscore_link']"));
-            for (WebElement item2 : myElementsGameDiv) {
-                if (item2.getText().contains("F")) {
-                    System.out.println("------------------------------------------------------------------\n");
-                    System.out.println(item2.getText());
-                }
-            }
-
-            myDriver.close();
-
+            System.out.println(i);
+            i++;
         }
+
+        myDriver.close();
+        myDriver.quit();
+
     }
 }
