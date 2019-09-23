@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class SeleniumCSS02 {
 
@@ -15,49 +14,31 @@ public class SeleniumCSS02 {
         testDriver.manage().window().maximize();
         testDriver.get("https://www.espn.com.mx/");
 
-        List<WebElement> partidoElement;
+        List<WebElement> myElements =  testDriver.findElements(By.cssSelector(".cscore--final"));
 
-        testDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        WebElement myElemento;
+        WebElement myElementoBis;
+        int i = 1;
+        String liga;
 
-        List<WebElement> myElements = testDriver.findElements(By.cssSelector("h2[class='scoreLabel_title']"));
-
-        for(WebElement elemento: myElements) {
-            System.out.println("Liga: " + elemento.getText());
-        }
-
-        List<WebElement> gamesElements = testDriver.findElements(By.xpath("//span[contains(@class,'cscore_name--long')]/preceding::div[@class='cscore_team  icon-font-after']"));
-
-        System.out.println("Games Elem.: " + gamesElements.size());
-        int otro = 0;
-        String equipo1 = "";
-        int goles1 = 0;
-        String equipo2 = "";
-        int goles2 = 0;
-        for(WebElement elemento: gamesElements) {
-            if(elemento.getText().length() > 1) {
-                if(otro == 0) {
-                    otro++;
-                    equipo1 = elemento.getText().substring(0, elemento.getText().length() - 2);
-                    goles1 = Integer.parseInt(elemento.getText().substring(elemento.getText().length() - 1, elemento.getText().length()));
-                } else {
-                    otro = 0;
-                    equipo2 = elemento.getText().substring(0, elemento.getText().length() - 2);
-                    goles2 = Integer.parseInt(elemento.getText().substring(elemento.getText().length() - 1, elemento.getText().length()));
-
-                    if(goles1 > goles2) {
-                        System.out.println("Gano " + equipo1 + " Anoto: " + goles1);
-                    } else if(goles1 == goles2) {
-                        System.out.println("EMPATE");
-                    } else {
-                        System.out.println("Gano " + equipo2 + " Anoto: " + goles2);
-                    }
-                }
+        for (WebElement elemento : myElements ) {
+            liga = testDriver.findElement(By.xpath("(//div[contains(@class,'cscore--final')])["+ i +"]/preceding::h2[contains(@class, 'scoreLabel_title')][1]")).getAttribute("innerHTML");
+            if (elemento.getAttribute("class").contains("cscore--away-winner")) {
+                myElemento = elemento.findElement(By.cssSelector(".cscore_item--away"));
+                myElementoBis = myElemento.findElement(By.cssSelector("span[class='cscore_name cscore_name--long']"));
+                System.out.println(liga + " - Ganó visitante: " + myElementoBis.getAttribute("innerHTML"));
+            } else if (elemento.getAttribute("class").contains("cscore--home-winner")) {
+                myElemento = elemento.findElement(By.cssSelector(".cscore_item--home"));
+                myElementoBis = myElemento.findElement(By.cssSelector("span[class='cscore_name cscore_name--long']"));
+                System.out.println(liga + " - Ganó local: " + myElementoBis.getAttribute("innerHTML"));
             }
+            System.out.println(i);
+            i++;
         }
+        // Wait some seconds
 
+        // Quit web driver
         testDriver.close();
-
         testDriver.quit();
-
     }
 }
