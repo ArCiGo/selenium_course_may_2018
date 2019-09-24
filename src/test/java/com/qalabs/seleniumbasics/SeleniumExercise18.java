@@ -25,23 +25,42 @@ public class SeleniumExercise18 {
         System.out.println("Scores");
 
         List<WebElement> finalScores = driver.findElements(By.cssSelector(".cscore--final"));
-        WebElement winner, score;
+        WebElement winner, team, score;
+        WebElement draw1, draw2, teamDraw1, teamDraw2, scoreDraw1, scoreDraw2;
         String league;
+        int i = 1;
 
-        for (int i = 0; i < finalScores.size(); i++) {
+        for (WebElement item : finalScores) {
             league = driver.findElement(By.xpath("(//div[contains(@class,'cscore--final')])[" + i + "]/preceding::h2[contains(@class, 'scoreLabel_title')][1]")).getAttribute("innerHTML");
 
-            if(finalScores.get(i).getAttribute("class").contains("cscore--away-winner")) {
-                winner = finalScores.get(i).findElement(By.cssSelector(".cscore_item--away"));
-                score = winner.findElement(By.cssSelector("span[class='cscore_name cscore_name--long']"));
+            if(item.getAttribute("class").contains("cscore--away-winner")) {
+                winner = item.findElement(By.cssSelector(".cscore_item--away"));
+                team = winner.findElement(By.cssSelector("span[class='cscore_name cscore_name--long']"));
+                score = item.findElement(By.xpath("./descendant::li[contains(@class, 'cscore_item') and contains(@class, 'cscore_item--away')]/descendant::div[@class='cscore_score update__score  ']"));
 
-                System.out.println(league + ". Away winner: " + score.getAttribute("innerHTML"));
-            } else if(finalScores.get(i).getAttribute("class").contains("csclre--home-winner")) {
-                winner = finalScores.get(i).findElement(By.cssSelector(".cscore_item--away"));
-                score = winner.findElement(By.cssSelector("span[class='cscore_name cscore_name--long']"));
+                System.out.println("League: " + league + ". Away winner: " + team.getAttribute("innerHTML") + ". Score: " + score.getAttribute("innerHTML").trim());
+                //System.out.println("League: " + league + ". Away winner: " + team.getAttribute("innerHTML"));
+            } else if(item.getAttribute("class").contains("cscore--home-winner")) {
+                winner = item.findElement(By.cssSelector(".cscore_item--home"));
+                team = winner.findElement(By.cssSelector("span[class='cscore_name cscore_name--long']"));
+                score = item.findElement(By.xpath("./descendant::li[contains(@class, 'cscore_item') and contains(@class, 'cscore_item--home')]/descendant::div[@class='cscore_score update__score  ']"));
 
-                System.out.println(league + ". Home winner: " + score.getAttribute("innerHTML"));
+                System.out.println("League: " + league + ". Home winner: " + team.getAttribute("innerHTML") + ". Score: " + score.getAttribute("innerHTML").trim());
+                //System.out.println("League: " + league + ". Home winner: " + team.getAttribute("innerHTML"));
+            } else if(item.getAttribute("class").contains("top cscore--final")) {
+                draw1 = item.findElement(By.cssSelector(".cscore_item--away"));
+                teamDraw1 = draw1.findElement(By.cssSelector("span[class='cscore_name cscore_name--long']"));
+                scoreDraw1 = item.findElement(By.xpath("./descendant::li[contains(@class, 'cscore_item') and contains(@class, 'cscore_item--away')]/descendant::div[@class='cscore_score update__score  ']"));
+
+                draw2 = item.findElement(By.cssSelector(".cscore_item--home"));
+                teamDraw2 = draw2.findElement(By.cssSelector("span[class='cscore_name cscore_name--long']"));
+                scoreDraw2 = item.findElement(By.xpath("./descendant::li[contains(@class, 'cscore_item') and contains(@class, 'cscore_item--home')]/descendant::div[@class='cscore_score update__score  ']"));
+
+                System.out.println("League: " + league + ". Draw! between: " + teamDraw1.getAttribute("innerHTML") + " (score: " + scoreDraw1.getAttribute("innerHTML").trim() + ")"+
+                        " and: " + teamDraw2.getAttribute("innerHTML") + " (score: " + scoreDraw2.getAttribute("innerHTML").trim() +")");
             }
+
+            i++;
         }
 
         /*
