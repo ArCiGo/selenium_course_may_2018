@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteForExample3" verbose="1" >
+    <test name="Basic Regression">
+        <classes>
+            <class name="com.qalabs.seleniumbasics.testngexamples.TestNgExample1">
+                <methods>
+                    <include name="AssertWebpage" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
