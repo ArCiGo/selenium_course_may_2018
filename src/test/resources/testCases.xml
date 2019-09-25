@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testCases" verbose="1">
+    <test name="Basic regression">
+        <classes>
+            <class name="testngexamples.TestNGExample1">
+                <methods>
+                    <include name="passTC" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
