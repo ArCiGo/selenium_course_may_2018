@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testCases" verbose="1">
+<test name="Basic Regresion">
+    <classes>
+      <class name="testngexample.TestNGExample1">
+          <methods>
+             <include name="openGoogle"/>
+          </methods>>
+      </class>
+    </classes>
+</test>
+</suite>
+
+
