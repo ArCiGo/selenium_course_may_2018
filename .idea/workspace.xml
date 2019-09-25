@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4f23a5a-af49-47fe-9337-215d8e761898" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/testngexamples/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testngexamples/TestNGExample1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testCases.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/00818418b84d1d8c93199272b48013fcf5781622" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Selenium2017.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium2017.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/Sample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lib-thirdparty/driversforwin/chromedriver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lib-thirdparty/driversforwin/geckodriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testngexamples/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testngexamples/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testngexamples/TestNGExample1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testngexamples/TestNGExample1.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

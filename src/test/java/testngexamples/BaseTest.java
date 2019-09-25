@@ -8,7 +8,7 @@ import com.qalabs.seleniumbasics.WebDriverFactory;
 
 public class BaseTest {
 
-    protected static WebDriver driver;
+    protected WebDriver driver;
     protected WebDriverWait wait;
 
     @BeforeClass(alwaysRun = true)
