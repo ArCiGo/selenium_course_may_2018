@@ -20,8 +20,8 @@ public class TestNgExa1 extends BaseTest{
 
         Assert.assertEquals(myDriver.getCurrentUrl(), "https://www.google.com.mx/", "Pagina equivocada");
 
-        myDriver.close();
+        //myDriver.close();
         // Quit web driver
-        myDriver.quit();
+        //myDriver.quit();
     }
 }
