@@ -63,7 +63,7 @@ public class GoogleResultsPage extends BasePage {
 
     public void prevResultPage() {
         // Add Code
-        this.prevResultPage();
+        this.prevButton.click();
         return;
     }
 }
