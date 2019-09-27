@@ -19,6 +19,6 @@ public class BaseTest {
     @AfterClass(alwaysRun = true)
     public void tearDown(){
         myDriver.close();
-        myDriver.close();
+        myDriver.quit();
     }
 }
