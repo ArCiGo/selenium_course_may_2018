@@ -14,6 +14,9 @@ public abstract class BasePage implements Page {
         PageFactory.initElements(driver, this);
     }
 
+    protected BasePage() {
+    }
+
     public void open() {
         //logger.info("Getting url: " + this.baseUrl);
         this.driver.get(this.baseUrl);

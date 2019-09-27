@@ -1,6 +1,5 @@
 package com.qalabs.javabasics.googleproject.page;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,47 +25,45 @@ public class GoogleResultsPage extends BasePage {
     private WebElement prevButton;
 
     public GoogleResultsPage(WebDriver driver) {
-        super(driver, driver.getCurrentUrl());
+        super(driver, "");
+        BasePage myPage = new BasePage() {
+            @Override
+            public void open() {
+                super.open();
+            }
+        };
+        myPage.open();
+
     }
 
     public GoogleResultsPage search(String searchTxt){
         // Add Code
-        WebElement searchBox = driver.findElement(By.name("q"));
-        searchButton.equals(searchTxt);
-        searchTxt.contains(searchTxt);
-        System.out.println("Estan en google" + searchBox + "tu palabra es: " + searchTxt);
-
-        boolean testValue = searchTxt.equals(this.prevButton.getAttribute("q"));
-        System.out.println("El valor de la prueba es " + testValue + "y es igual a " + searchBox);
-
+        this.searchBox.sendKeys(searchTxt);
+        this.searchButton.click();
         return null;
     }
 
-    public void currentSearch() throws InterruptedException {
+    public void CurrentSearch(String SearchTxt) {
         // Add Code
-        WebElement searchButton = driver.findElement(By.xpath("//*[@aria-label='Buscar con Google'"));
-        currentSearch();
-        System.out.println(baseUrl);
-
+        this.results.contains(SearchTxt);
+        return;
     }
 
-    public void getResults() throws  InterruptedException{
+    public void getResults(){
         // Add Code
-        List<WebElement> results = driver.findElements(By.xpath("//[@id='rso']//[@class='g']"));
-        results.equals(searchButton);
-        results.size();
+        this.results.contains(searchButton);
+        return;
     }
 
     public void nextResultPage() {
         // Add Codes
-        WebElement ntxResult = driver.findElement(By.id(prevButton.getAttribute("pnnext")));
-
-        ntxResult.equals(ntxResult);
+        this.nextButton.click();
+        return;
     }
 
     public void prevResultPage() {
         // Add Code
-        WebElement prvResult = driver.findElement(By.id(prevButton.getAttribute("pnprev")));
-        prvResult.equals(prvResult);
+        this.prevResultPage();
+        return;
     }
 }
