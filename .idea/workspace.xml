@@ -2,10 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4f23a5a-af49-47fe-9337-215d8e761898" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/components/FacebookComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/components/login/LoginBodyComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/components/login/LoginFooterComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/components/login/LoginHeaderComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/pages/FacebookDashboardPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/pages/FacebookLoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/pages/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/facebook/FacebookLoginTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/utils/PropertyReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Credentials.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testngexamples/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testngexamples/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testngexamples/TestNGExample1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testngexamples/TestNGExample1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/ExerciseSelenium14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/ExerciseSelenium14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise15.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise17.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise18.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise18.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise19.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumHandsOn1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumHandsOn1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/WebDriverFactory.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +46,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -65,7 +88,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/arcigo/Documents/Projects/Bootcamp Automation QAMinds/selenium_course_may_2018/src/test/resources/testCases.xml">
+  <component name="RunManager" selected="TestNG.FacebookLoginTests.loginWithValidCredentials">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -86,36 +109,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumExercise17" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.SeleniumExercise17" />
-      <module name="Selenium2017" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qalabs.seleniumbasics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SeleniumExercise18" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.SeleniumExercise18" />
-      <module name="Selenium2017" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qalabs.seleniumbasics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SeleniumExercise19" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.SeleniumExercise19" />
       <module name="Selenium2017" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -184,6 +179,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FacebookLoginTests.loginWithValidCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium2017" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qalabs.seleniumbasics.facebook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qalabs.seleniumbasics.facebook" />
+      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.facebook.FacebookLoginTests" />
+      <option name="METHOD_NAME" value="loginWithValidCredentials" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FacebookLoginTests.validateLoginPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium2017" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qalabs.seleniumbasics.facebook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qalabs.seleniumbasics.facebook" />
+      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.facebook.FacebookLoginTests" />
+      <option name="METHOD_NAME" value="validateLoginPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="/Users/arcigo/Documents/Projects/Bootcamp Automation QAMinds/selenium_course_may_2018/src/test/resources/testCases.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium2017" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testCases.xml" />
@@ -215,19 +248,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.assertions" />
-      <item itemvalue="Application.SeleniumExercise17" />
-      <item itemvalue="Application.SeleniumExercise19" />
       <item itemvalue="Application.SeleniumExercise18" />
       <item itemvalue="Application.Sample" />
       <item itemvalue="TestNG./Users/arcigo/Documents/Projects/Bootcamp Automation QAMinds/selenium_course_may_2018/src/test/resources/testCases.xml" />
+      <item itemvalue="TestNG.FacebookLoginTests.validateLoginPage" />
+      <item itemvalue="TestNG.FacebookLoginTests.loginWithValidCredentials" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.FacebookLoginTests.loginWithValidCredentials" />
+        <item itemvalue="TestNG.FacebookLoginTests.validateLoginPage" />
         <item itemvalue="TestNG./Users/arcigo/Documents/Projects/Bootcamp Automation QAMinds/selenium_course_may_2018/src/test/resources/testCases.xml" />
         <item itemvalue="Application.SeleniumExercise18" />
         <item itemvalue="Application.Sample" />
-        <item itemvalue="Application.SeleniumExercise17" />
-        <item itemvalue="Application.SeleniumExercise19" />
       </list>
     </recent_temporary>
   </component>
@@ -282,27 +315,27 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise18.java</url>
-          <line>33</line>
+          <line>30</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise18.java</url>
-          <line>32</line>
+          <line>29</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise18.java</url>
-          <line>40</line>
+          <line>37</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise18.java</url>
-          <line>47</line>
+          <line>44</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise18.java</url>
-          <line>58</line>
+          <line>55</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

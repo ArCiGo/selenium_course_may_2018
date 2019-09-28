@@ -1,0 +1,9 @@
+
+msquid:S2259"J"NullPointerException" will be thrown when invoking method "closeInput()".(©ÙéÃùÿÿÿÿ8İ»âÅ×-
+Xsquid:S1143"5Remove this return statement from this finally block.(¾Óôİûÿÿÿÿ8°ÁÕÅ×-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(ö¬8ŒàÓÅ×-
+]squid:S1118":Add a private constructor to hide the implicit public one.(ÍöÔóùÿÿÿÿ8İ»âÅ×-
+[
+squid:S106!"9Replace this use of System.out or System.err by a logger.(°£Ö‹üÿÿÿÿ8¯ÉáÅ×-
+dsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(æÃÒºıÿÿÿÿ8ÖÑñÅ×-

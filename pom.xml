@@ -30,6 +30,13 @@
         </dependency>
 
     </dependencies>
+    <build>
+        <resources>
+            <resource>
+                <directory>/Users/arcigo/Documents/Projects/Bootcamp\ Automation\ QAMinds/selenium_course_may_2018/src/test/resources/</directory>
+            </resource>
+        </resources>
+    </build>
 </project>
 
 

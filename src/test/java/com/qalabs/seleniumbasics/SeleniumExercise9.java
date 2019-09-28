@@ -1,6 +1,5 @@
 package com.qalabs.seleniumbasics;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
