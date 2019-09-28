@@ -29,7 +29,7 @@ public class SeleniumExercise8 {
 
         WebElement busqueda1 = myDriver.findElement(By.id("pass"));
         busqueda1.click();
-        busqueda1.sendKeys("Negativo076");
+        busqueda1.sendKeys("");
 
         Thread.sleep(2000);
 
