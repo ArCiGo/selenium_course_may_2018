@@ -1,6 +1,7 @@
 package com.qalabs.seleniumbasics.facebook;
 
 import com.qalabs.javabasics.facebook.pages.FacebookLoginPage;
+import com.qalabs.javabasics.utils.Log;
 import com.qalabs.seleniumbasics.utils.PropertyReader;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -20,6 +21,8 @@ public class FacebookLoginTests extends BaseTest {
 
     @Test
     public void validateLoginPage() {
+        Log.info("Entering to validateLoginPage() test");
+
         this.driver.navigate().to(facebookURL);
 
         FacebookLoginPage facebookLoginPage = new FacebookLoginPage(this.driver);

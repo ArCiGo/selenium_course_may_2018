@@ -2,32 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4f23a5a-af49-47fe-9337-215d8e761898" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/components/FacebookComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/components/login/LoginBodyComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/components/login/LoginFooterComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/components/login/LoginHeaderComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/pages/FacebookDashboardPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/pages/FacebookLoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/pages/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/facebook/FacebookLoginTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/utils/PropertyReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Credentials.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0da76dda26785c63418a93238dc7a0a018cc4a83" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/32e580795531c0024a7c590c66a6364ede31769d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/439cab68b29be629e13592b62ea0190bd4712d1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43cd30f5dbe134d07cc5a7026950bd0db33b15a7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/76fba6493dfe85b7eef00ae3bc25f6f3d310f1fc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7f6e9c0c4440fd832f5099f6804b81651ed664d2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/a/aa5ed9aa9f269a156b5db2bf7e85e01f2284701c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c4f5a102f4be5682cb5e33c9a4de1b8b485beb9b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/1/f1ae905732d6331a50be8f613b88a11a68b152a1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/utils/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/045a0f7ec087db2bc03eeddc08fd3a7e3075c94b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/045a0f7ec087db2bc03eeddc08fd3a7e3075c94b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/391fc664911cc3c6b8a44955b32a75b08c10e478" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/5937930df3f76ff8d469e725e52707327f66c3c6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/5937930df3f76ff8d469e725e52707327f66c3c6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/daf97a68ab741688371e13fdad1dc8c90ed8103f" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium2017.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium2017.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/ExerciseSelenium14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/ExerciseSelenium14.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise15.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise17.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise18.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise18.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise19.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumExercise9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumHandsOn1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/SeleniumHandsOn1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/WebDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/pages/FacebookLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/facebook/pages/FacebookLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/facebook/FacebookLoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/facebook/FacebookLoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Credentials.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Credentials.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/Selenium2017.kotlin_module" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,12 +68,17 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -88,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.FacebookLoginTests.loginWithValidCredentials">
+  <component name="RunManager" selected="TestNG.FacebookLoginTests.validateLoginPage">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -256,8 +260,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FacebookLoginTests.loginWithValidCredentials" />
         <item itemvalue="TestNG.FacebookLoginTests.validateLoginPage" />
+        <item itemvalue="TestNG.FacebookLoginTests.loginWithValidCredentials" />
         <item itemvalue="TestNG./Users/arcigo/Documents/Projects/Bootcamp Automation QAMinds/selenium_course_may_2018/src/test/resources/testCases.xml" />
         <item itemvalue="Application.SeleniumExercise18" />
         <item itemvalue="Application.Sample" />

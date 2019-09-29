@@ -1,0 +1,5 @@
+
+psquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ìŞê;8üêÏÉ×-
+[squid:S1068"8Remove this unused "loginFooterComponent" private field.(ğú³‚ıÿÿÿÿ8€öÍÈ×-
+]squid:S1161":Add the "@Override" annotation above this method signature(ğäü¦ûÿÿÿÿ8é¢ÚÊ×-
+Ysquid:S1068"6Remove this unused "loginBodyComponent" private field.(…›Çìÿÿÿÿÿ8€öÍÈ×-

@@ -3,6 +3,7 @@ package com.qalabs.javabasics.facebook.pages;
 import com.qalabs.javabasics.facebook.components.login.LoginBodyComponent;
 import com.qalabs.javabasics.facebook.components.login.LoginFooterComponent;
 import com.qalabs.javabasics.facebook.components.login.LoginHeaderComponent;
+import com.qalabs.javabasics.utils.Log;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -23,6 +24,7 @@ public class FacebookLoginPage extends BasePage {
     }
 
     public boolean isLoaded() {
+        Log.info("Entering to isLoaded() from FacebookLoginPage class");
         wait.until(ExpectedConditions.visibilityOf(this.loginHeaderComponent.getFacebookIconElement()));
 
         try {
