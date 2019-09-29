@@ -16,9 +16,9 @@ public class SeleniumExercise8 {
         // Get google home page
         myDriver.get("https://www.facebook.com");
         WebElement myElement = myDriver.findElement(By.id("email"));
-        myElement.sendKeys("anlly1402@hotmail.com");
+        myElement.sendKeys("xxxx");
         myElement = myDriver.findElement(By.id("pass"));
-        myElement.sendKeys("disfrutalo");
+        myElement.sendKeys("xxxxx");
         myElement = myDriver.findElement(By.id("u_0_2"));
         myElement.click();
         myDriver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);

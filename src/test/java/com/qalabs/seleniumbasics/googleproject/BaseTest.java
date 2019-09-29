@@ -1,10 +1,22 @@
 package com.qalabs.seleniumbasics.googleproject;
 
-import com.qalabs.javabasics.googleproject.page.BasePage;
+import com.qalabs.seleniumbasics.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
-public class BaseTest extends BasePage {
-    public BaseTest(WebDriver driver, String baseUrl) {
-        super(driver, baseUrl);
+public class BaseTest {
+    protected WebDriver myDriver;
+    @BeforeClass (alwaysRun=true)
+    public void setup(){
+        //define which browser to use
+        String browser= "chrome";
+        //get corrent driver for disere browser
+        myDriver= WebDriverFactory.getDriver(browser);
+    }
+    @AfterClass (alwaysRun=true)
+    public void tearDown(){
+        myDriver.close();
+        myDriver.quit();
     }
 }

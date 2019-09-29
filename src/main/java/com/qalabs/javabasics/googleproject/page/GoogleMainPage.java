@@ -4,8 +4,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.concurrent.TimeUnit;
 
 public class GoogleMainPage extends BasePage {
+    public static final String BASE_URL = "https://www.google.com/";
+
     @FindBy(how = How.NAME, using = "q")
     private WebElement searchBox;
 
@@ -19,43 +26,31 @@ public class GoogleMainPage extends BasePage {
     private WebElement doodle;
 
     public GoogleMainPage(WebDriver driver) {
-        super(driver, "");
-        //super(driver, "https://google.com.mx");
-        // BasePage myPage = new BasePage();
-        // myPage.open();
+        super(driver);
+        PageFactory.initElements(driver, this);
     }
 
-    public GoogleResultsPage searchInGoogle(String searchTxt) {
-        this.searchBox.clear();
-        this.searchBox.sendKeys(searchTxt);
-        this.searchInGoogleButton.click();
-        return new GoogleResultsPage(this.driver);
+    public GoogleResultsPage searchInGoogle(String seacrhTxt) {
+        searchBox.sendKeys(seacrhTxt);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        searchInGoogleButton.click();
+        return new GoogleResultsPage(driver);
     }
 
-    public GoogleResultsPage feelingLuckySearch(String searchTxt) {
-        this.searchBox.clear();
-        this.searchBox.sendKeys(searchTxt);
-        this.feelingLuckyButton.click();
-        return new GoogleResultsPage(this.driver);
+    public GoogleResultsPage searchInGoogleFeelingLucky(String seacrhTxt) {
+        searchBox.sendKeys(seacrhTxt);
+        feelingLuckyButton.click();
+        return new GoogleResultsPage(driver);
     }
 
     @Override
     public boolean isLoaded() {
-        if (this.doodle.isDisplayed()) {
-            return (true);
-        } else {
-            return (false);
-        }
-        /*BasePage myBase = new BasePage();
-        try{
-            WebDriverWait wait= new  WebDriverWait(driver, 10);
-            wait.until(ExceptionConditions.VisibilityOf(double));
-            myBase.logger.info("Google main page loaded");
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 10);
+            wait.until(ExpectedConditions.visibilityOf(doodle));
             return true;
-        }catch(RuntimeException exception){
-            myBase.logger.error("Google main page was not load;"+ exception);
+        } catch(RuntimeException exception) {
             return false;
         }
-    }*/
     }
 }

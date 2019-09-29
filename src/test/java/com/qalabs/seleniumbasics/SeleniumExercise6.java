@@ -14,9 +14,9 @@ public class SeleniumExercise6 {
         // Get google home page
         myDriver.get("https://www.facebook.com");
         WebElement myElement = myDriver.findElement(By.id("email"));
-        myElement.sendKeys("anlly1402@hotmail.com");
+        myElement.sendKeys("xxxxx");
         myElement = myDriver.findElement(By.id("pass"));
-        myElement.sendKeys("kjafkjhsjdf");
+        myElement.sendKeys("xxxxx");
         myElement= myDriver.findElement(By.id("u_0_2"));
         myElement.click();
         Thread.sleep(5000);

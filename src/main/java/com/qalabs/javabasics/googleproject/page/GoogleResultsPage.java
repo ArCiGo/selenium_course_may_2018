@@ -1,14 +1,23 @@
 package com.qalabs.javabasics.googleproject.page;
 
+
 import com.qalabs.javabasics.googleproject.components.ResultItem;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class GoogleResultsPage extends BasePage {
+
+
+    private List<ResultItem> resultItems;
 
     @FindBy(how = How.NAME, using = "q")
     private WebElement searchBox;
@@ -16,65 +25,100 @@ public class GoogleResultsPage extends BasePage {
     @FindBy(how = How.XPATH, using = "//*[@aria-label='Buscar con Google']")
     private WebElement searchButton;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='rso']//*[@class='g']")
-    private List<WebElement> results;
-
     @FindBy(how = How.ID, using = "pnnext")
     private WebElement nextButton;
 
     @FindBy(how = How.ID, using = "pnprev")
     private WebElement prevButton;
 
-    @FindBy(how = How.ID, using = "hplogo")
-    private WebElement doodle;
-
     public GoogleResultsPage(WebDriver driver) {
-        super(driver, driver.getCurrentUrl());
+        super(driver);
+        PageFactory.initElements(driver, this);
+        initResults();
     }
 
-    public GoogleResultsPage search(String searchTxt) {
-        this.searchBox.clear();
-        this.searchBox.sendKeys(searchTxt);
-        this.searchButton.click();
-        return new GoogleResultsPage(this.driver);
+    private void initResults() {
+        List<WebElement> results = driver.findElements(By.xpath("//*[@class='srg']//*[@class='g']"));
+        resultItems= new ArrayList<ResultItem>();
+        for(WebElement element : results) {
+            resultItems.add(new ResultItem(element));
+        }
     }
 
-    public String currentSearch() {
-        return this.searchBox.getText();
+    public GoogleResultsPage searchInGoogle(String searchTxt) {
+        searchBox.sendKeys(searchTxt);
+        searchButton.click();
+        return new GoogleResultsPage(driver);
     }
 
-    public List<ResultItem> getResults() {
-
-        return this.results;
+    public String clickOnResultByIndex(int index) {
+        if(index > 0) {
+            ResultItem resultItem = resultItems.get(index);
+            resultItem.click();
+            return driver.getCurrentUrl();
+        } else {
+            return null;
+        }
     }
 
-    public void nextResultPage() {
+    public String clickOnResultByTitle(String title) throws InterruptedException {
+        for(ResultItem resultItem : resultItems) {
+            if(resultItem.getDescription().contains(title)) {
+                //System.out.println(resultItem.getDescription());
+                System.out.println(title);
+                resultItem.click();
+                Thread.sleep(3000);
+                return driver.getCurrentUrl();
+            }
+        }
 
-        this.nextButton().click;
+        return null;
     }
 
-    public void prevResultPage() {
+    public boolean verifyResultByIndex(int index, String wordToValidate) {
+        if(index > 0) {
+            ResultItem resultItem = resultItems.get(index);
 
-        this.prevButton().click;
+            System.out.println(resultItem.getDescription());
+
+            if(resultItem.getDescription().contains(wordToValidate)) {
+                System.out.println("Result contains " + wordToValidate);
+                return true;
+            }
+
+            return false;
+        } else {
+            return false;
+        }
+    }
+
+    public GoogleResultsPage clickOnNextButton() {
+        if(nextButton.isDisplayed()) {
+            nextButton.click();
+            return new GoogleResultsPage(driver);
+        }
+
+        return null;
+    }
+
+    public GoogleResultsPage clickOnPrevButton() {
+        if(prevButton.isDisplayed()) {
+            prevButton.click();
+            return new GoogleResultsPage(driver);
+        }
+
+        return null;
     }
 
     @Override
     public boolean isLoaded() {
-        if (this.doodle.isDisplayed()) {
-            return (true);
-        } else {
-            return (false);
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 10);
+            wait.until(ExpectedConditions.visibilityOf(nextButton));
+            return true;
+        } catch(RuntimeException exception) {
+            System.out.println("Google results page is not loaded");
+            return false;
         }
-    /* hay que revisar esto más a detalle
-    BasePage myBase = new BasePage();
-    try{
-      WebDriverWait wait= new  WebDriverWait(driver, 10);
-      wait.until(ExceptionConditions.VisibilityOf(double));
-      myBase.logger.info("Google main page loaded");
-      return true;
-    }catch(RuntimeException exception){
-      myBase.logger.error("Google main page was not load;"+ exception);
-      return false;
-  }*/
     }
 }
