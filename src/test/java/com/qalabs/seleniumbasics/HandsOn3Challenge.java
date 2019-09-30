@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class HandsOn3Challenge {
-<<<<<<< HEAD
 
     public static void main(String[] args) throws InterruptedException, NullPointerException {
         String browser = "chrome";
@@ -37,31 +36,5 @@ public class HandsOn3Challenge {
         }
         myDriver.close();
         myDriver.quit();
-=======
-    public static void main(String[] args) throws InterruptedException, NullPointerException {
-        // Define which browser to use
-        String browser = "firefox";
-        String url = "https://www.inaturalist.org";
-        String topic="Colomos, Guadalajara";
-        // Get correct driver for desire browser
-
-        WebDriver myDriver = WebDriverFactory.getDriver(browser);
-        // Get google home page
-        myDriver.get(url);
-        myDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        WebElement myElement = myDriver.findElement(By.cssSelector("#header-more-dropdown-toggle"));
-        myElement.click();
-        myElement= myDriver.findElement(By.xpath("//a[contains(text(),'Places')]"));
-        myElement.click();
-        myElement = myDriver.findElement(By.xpath("//input[@class='text']"));
-        myElement.sendKeys(topic);
-        myElement= myDriver.findElement(By.xpath("//input[@value='Search']"));
-        myElement.click();
-        List<WebElement> subCategories = myDriver.findElements(By.cssSelector(".taxon_links"));
-        for (WebElement listCategories : subCategories) {
-            System.out.println( listCategories.getText());
-        }
-        myDriver.close();
->>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b
     }
 }

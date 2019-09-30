@@ -3,16 +3,10 @@ package com.qalabs.javabasics.googleproject.components;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-<<<<<<< HEAD
-public class ResultItem extends google.elements.BaseElement {
-
-    public ResultItem(WebElement rootElement) {
-=======
 public class ResultItem extends BaseElement {
 
     public ResultItem(WebElement rootElement) {
 
->>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b
         super(rootElement);
     }
 
@@ -24,8 +18,8 @@ public class ResultItem extends BaseElement {
         return this.rootElement.getText();
     }
 
-    public String getTitle() {
-        return this.title().getText();
+    public WebElement getTitle() {
+        return this.title();
     }
 
     public void clickOnTitle() {
@@ -45,7 +39,3 @@ public class ResultItem extends BaseElement {
         return String.format("%s\n", this.getDescription());
     }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b

@@ -2,10 +2,6 @@ package com.qalabs.seleniumbasics.googleproject;
 
 import com.qalabs.javabasics.googleproject.page.GoogleMainPage;
 import com.qalabs.javabasics.googleproject.page.GoogleResultsPage;
-<<<<<<< HEAD
-=======
-import com.qalabs.seleniumbasics.BaseTest;
->>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

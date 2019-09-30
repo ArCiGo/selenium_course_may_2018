@@ -10,11 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-<<<<<<< HEAD
       <module name="selenium_course_may_2018" target="1.5" />
-=======
-      <module name="selenium_course_may_2018" target="8" />
->>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b
     </bytecodeTargetLevel>
   </component>
 </project>

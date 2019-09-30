@@ -1,23 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="testCases" verbose="1">
-<<<<<<< HEAD
-    <test name="Basic Regresion">
-    <classes>
-        <class name="testngexample.TestNGExample1">
-            <methods>
-                <include name="passTC" />
-            </methods>
-        </class>
-    </classes>
-
-    <classes>
-        <class name="googleproject.GoogleExampleTest">
-            <methods>
-                <include name="validateGoogleURL" />
-            </methods>
-        </class>
-    </classes>
-    </test>
     <test name="Basic Regresion">
         <classes>
             <class name="testngexample.TestNGExample1">
@@ -31,6 +13,3 @@
 </suite>
 
 
-
-
->>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b

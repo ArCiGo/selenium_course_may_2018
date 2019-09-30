@@ -13,13 +13,13 @@ public class PropertyReader {
         String propertyValue = null;
 
         try {
-            inputStream = new FileInputStream("");
-            properties.load(inputStream);
-            propertyValue = properties.getProperty(key);
+            inputStream = new FileInputStream( "" );
+            properties.load( inputStream );
+            propertyValue = properties.getProperty( key );
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } finally {
-            closeInput(inputStream);
+            closeInput( inputStream );
             return propertyValue;
         }
     }

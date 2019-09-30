@@ -1,7 +1,7 @@
-package com.qalabs.seleniumbasics.facebookproject;
+package com.qalabs.seleniumbasics.facebook;
 
-import com.qalabs.javabasics.facebookproject.componets.login.LoginHeaderComponent;
-import com.qalabs.javabasics.facebookproject.page.FacebookLoginPage;
+import com.qalabs.javabasics.facebook.components.login.login.LoginHeaderComponent;
+import com.qalabs.javabasics.facebook.pages.FacebookLoginPage;
 import com.qalabs.seleniumbasics.BaseTest;
 import com.qalabs.seleniumbasics.utils.PropertyReader;
 import org.testng.Assert;
@@ -12,7 +12,7 @@ public class FacebookLoginTest extends BaseTest {
 
     @Test()
     public void validateLoginPage() {
-        this.myDriver.get(PropertyReader.getProperty("test.properties", "TEST_URL"));
+        this.myDriver.get( PropertyReader.getProperty("test.properties", "TEST_URL"));
 
         FacebookLoginPage facebookLoginPage = new FacebookLoginPage(this.myDriver);
 

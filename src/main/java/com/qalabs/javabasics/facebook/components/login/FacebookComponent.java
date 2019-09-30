@@ -1,4 +1,4 @@
-package facebook.components;
+package com.qalabs.javabasics.facebook.components.login;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;

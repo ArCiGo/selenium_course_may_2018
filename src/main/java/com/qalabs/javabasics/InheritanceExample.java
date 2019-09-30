@@ -9,10 +9,6 @@ class Bike {
         this.brand = brand;
         this.speed = 0;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b
     void setBrand(String brand) {
         this.brand = brand;
     }
@@ -28,24 +24,13 @@ class Bike {
     int getSpeed() {
         return this.speed;
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b
     void speedUp() {
         this.speed += 1;
         System.out.println(String.format("%s speed %d", this.brand, this.speed));
     }
 }
 
-<<<<<<< HEAD
-class RoadBike extends Bike {
-
-    RoadBike(String brand) {
-        super(brand);
-        this.setSpeed(5);
-    }
-=======
 // create a new class RoadBike that extends Bike and override speedup behavior
 
 class RoadBike extends Bike {
@@ -67,7 +52,6 @@ class RoadBike extends Bike {
 
     public void setSpeed(int speed){ this.speed= speed; }
 
->>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b
 }
 
 class MountainBike extends Bike {
@@ -83,11 +67,6 @@ class MountainBike extends Bike {
     }
 }
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b
 public class InheritanceExample {
     public static void main (String[] args) {
         // Hold bike instance into bike variable
@@ -96,23 +75,6 @@ public class InheritanceExample {
         solve(bike);
         System.out.println(bike.getBrand());
 
-<<<<<<< HEAD
-        //testear speed of de class RoadBike
-
-        bike.speedUp();// bike behaviour
-
-        //override spect behavior for RoadBike
-
-        RoadBike bike1 =  new RoadBike("bike outside solve");
-        bike1.speedUp();
-        assert bike1.getSpeed() >=6;
-        assert bike1.getSpeed() > 6 : "la velocidad incrementa en 6";
-    }
-
-    public static void solve(Bike bike) {
-        bike.setBrand("Bike inside solve");
-    }
-=======
         // testear speed of the class RoadBike
 
         bike.speedUp(); // bike behaivor
@@ -129,7 +91,4 @@ public class InheritanceExample {
 
         bike.setBrand("Bike inside solve");
     }
-
-
->>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b
 }

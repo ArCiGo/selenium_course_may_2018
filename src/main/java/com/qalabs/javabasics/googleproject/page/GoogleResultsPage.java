@@ -1,9 +1,5 @@
 package com.qalabs.javabasics.googleproject.page;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b
 import com.qalabs.javabasics.googleproject.components.ResultItem;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,24 +10,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-<<<<<<< HEAD
-=======
 import java.util.ArrayList;
->>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b
 import java.util.List;
 
 public class GoogleResultsPage extends BasePage {
-
-<<<<<<< HEAD
-    @FindBy(how = How.ID, using = "lst-ib")
-    private WebElement searchBox;
-
-    @FindBy(how = How.NAME, using = "btnG")
-    private WebElement searchButton;
-
-    private List<ResultItem> resultItems;
-
-=======
 
     private List<ResultItem> resultItems;
 
@@ -41,7 +23,6 @@ public class GoogleResultsPage extends BasePage {
     @FindBy(how = How.XPATH, using = "//*[@aria-label='Buscar con Google']")
     private WebElement searchButton;
 
->>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b
     @FindBy(how = How.ID, using = "pnnext")
     private WebElement nextButton;
 
@@ -54,23 +35,12 @@ public class GoogleResultsPage extends BasePage {
         initResults();
     }
 
-<<<<<<< HEAD
-    private List<ResultItem> initResults() {
-        List<WebElement> results = driver.findElements(By.xpath("//*[@class='srg']//*[@class='g']"));
-
-        for(WebElement element : results) {
-            resultItems.add(new ResultItem(element));
-        }
-
-        return resultItems;
-=======
     private void initResults() {
         List<WebElement> results = driver.findElements(By.xpath("//*[@class='srg']//*[@class='g']"));
         resultItems= new ArrayList<ResultItem>();
         for(WebElement element : results) {
             resultItems.add(new ResultItem(element));
         }
->>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b
     }
 
     public GoogleResultsPage searchInGoogle(String searchTxt) {
@@ -82,7 +52,6 @@ public class GoogleResultsPage extends BasePage {
     public String clickOnResultByIndex(int index) {
         if(index > 0) {
             ResultItem resultItem = resultItems.get(index);
-            resultItem.click();
             return driver.getCurrentUrl();
         } else {
             return null;
@@ -91,13 +60,8 @@ public class GoogleResultsPage extends BasePage {
 
     public String clickOnResultByTitle(String title) throws InterruptedException {
         for(ResultItem resultItem : resultItems) {
-<<<<<<< HEAD
-
-            if(resultItem.getDescription().contains(title)) {
-=======
             if(resultItem.getDescription().contains(title)) {
                 //System.out.println(resultItem.getDescription());
->>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b
                 System.out.println(title);
                 resultItem.click();
                 Thread.sleep(3000);
