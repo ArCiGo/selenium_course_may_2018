@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class GoogleMainPage extends BasePage {
+    public static final String BASE_URL = "https://www.google.com/";
     @FindBy(how = How.NAME, using = "q")
     private WebElement searchBox;
 
@@ -19,7 +20,7 @@ public class GoogleMainPage extends BasePage {
     private WebElement doodle;
 
     public GoogleMainPage(WebDriver driver) {
-        super(driver, "");
+        super(driver);
         //super(driver, "https://google.com.mx");
         // BasePage myPage = new BasePage();
         // myPage.open();
