@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 public class GoogleExampleTest extends BaseTest {
 
+
     @Test(alwaysRun = true, priority = 0)
     public void validateGoogleURL() {
         myDriver.get(GoogleMainPage.BASE_URL);

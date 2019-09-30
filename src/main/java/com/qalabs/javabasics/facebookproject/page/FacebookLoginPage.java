@@ -11,19 +11,24 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FacebookLoginPage extends BasePage{
+    public static final String BASE_URL = "https://www.facebook.com/";
     private LoginHeaderComponent loginHeaderComponent;
 
     private LoginBodyComponent loginBodyComponent;
 
     private LoginFooterComponent loginFooterComponent;
 
-    @FindBy(how = How.CLASS_NAME, using = "fb_logo img sp_ydUEsVjCbun sx_7e0f83")
+    @FindBy(how = How.XPATH, using = "//*[@id='blueBarDOMInspector']/div/div/div/div[1]/h1/a/i")
     private WebElement fbIconElement;
-
 
     public FacebookLoginPage(WebDriver driver) {
         super(driver);
         this.loginHeaderComponent = new LoginHeaderComponent(driver);
+    }
+
+    public FacebookLoginPage facebookLoginForm(String userName, String password){
+        this.loginHeaderComponent.logInFacebook(userName, password);
+        return new FacebookLoginPage(this.driver);
     }
 
     public FacebookLoginPage goToLoginPage() {
@@ -38,6 +43,7 @@ public class FacebookLoginPage extends BasePage{
             wait.until(ExpectedConditions.visibilityOf(fbIconElement));
             return true;
         } catch(RuntimeException exception) {
+            System.out.println("Google results page is not loaded");
             return false;
         }
     }

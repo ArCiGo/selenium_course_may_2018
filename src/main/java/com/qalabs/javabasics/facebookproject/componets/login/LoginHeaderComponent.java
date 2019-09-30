@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class LoginHeaderComponent extends FacebookComponent{
 
-        @FindBy(how = How.CLASS_NAME, using = "fb_logo img sp_ydUEsVjCbun sx_7e0f83")
+        @FindBy(how = How.XPATH, using = "//*[@id='blueBarDOMInspector']/div/div/div/div[1]/h1/a/i")
         private WebElement fbIconElement;
         @FindBy(how = How.ID, using = "email")
         private WebElement fbUserInputElement;
