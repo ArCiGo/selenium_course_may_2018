@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 public class ResultItem extends BaseElement {
 
     public ResultItem(WebElement rootElement) {
+
         super(rootElement);
     }
 

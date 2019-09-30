@@ -1,6 +1,5 @@
-package com.qalabs.seleniumbasics.googleproject;
+package com.qalabs.seleniumbasics;
 
-import com.qalabs.seleniumbasics.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;

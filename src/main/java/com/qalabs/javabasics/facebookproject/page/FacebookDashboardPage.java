@@ -1,5 +1,11 @@
 package com.qalabs.javabasics.facebookproject.page;
 
-public class FacebookDashboardPage {
+import org.openqa.selenium.WebDriver;
 
+public class FacebookDashboardPage extends BasePage{
+
+    public FacebookDashboardPage(WebDriver driver) {
+        super(driver);
+
+    }
 }

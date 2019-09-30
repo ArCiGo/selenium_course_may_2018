@@ -6,6 +6,10 @@ public class BasePage {
     protected WebDriver driver;
 
     public BasePage(WebDriver driver) {
+
         this.driver = driver;
+    }
+    public boolean isLoaded() {
+        return false;
     }
 }

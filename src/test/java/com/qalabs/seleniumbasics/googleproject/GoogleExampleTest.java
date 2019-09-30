@@ -2,6 +2,7 @@ package com.qalabs.seleniumbasics.googleproject;
 
 import com.qalabs.javabasics.googleproject.page.GoogleMainPage;
 import com.qalabs.javabasics.googleproject.page.GoogleResultsPage;
+import com.qalabs.seleniumbasics.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

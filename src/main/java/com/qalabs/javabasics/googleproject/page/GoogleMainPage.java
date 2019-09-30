@@ -39,6 +39,7 @@ public class GoogleMainPage extends BasePage {
 
     public GoogleResultsPage searchInGoogleFeelingLucky(String seacrhTxt) {
         searchBox.sendKeys(seacrhTxt);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         feelingLuckyButton.click();
         return new GoogleResultsPage(driver);
     }
