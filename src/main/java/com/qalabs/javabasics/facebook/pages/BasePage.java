@@ -1,4 +1,4 @@
-package com.qalabs.javabasics.googleproject.page;
+package com.qalabs.javabasics.facebook.pages;
 
 import org.openqa.selenium.WebDriver;
 
@@ -9,8 +9,5 @@ public class BasePage {
     public BasePage(WebDriver driver) {
         this.driver = driver;
     }
-
-    public boolean isLoaded() {
-        return false;
-    }
+    public boolean isLoaded(){return  false; }
 }

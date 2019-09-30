@@ -3,29 +3,39 @@ package com.qalabs.javabasics.googleproject.components;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class ResultItem extends com.qalabs.javabasics.googleproject.components.BaseElement {
+public class ResultItem extends google.elements.BaseElement {
 
-    public ResultItem(WebElement element) {
-        super(element);
+    public ResultItem(WebElement rootElement) {
+        super(rootElement);
     }
+
     private WebElement title() {
-        return this.root.findElement(By.xpath("//div[@class='r']/a/h3"));
+        return this.rootElement.findElement(By.xpath("//h3[@class='r']"));
     }
 
-    public String getDescription() {
-        return this.root.getText();
+    private String description() {
+        return this.rootElement.getText();
     }
 
     public String getTitle() {
         return this.title().getText();
     }
 
-    public void click() {
-        // Add Code
-        // this.click();
+    public void clickOnTitle() {
+        this.title().click();
     }
+
+    public String getDescription() {
+        return this.description();
+    }
+
+    public void click() {
+        this.rootElement.click();
+    }
+
     @Override
     public String toString() {
         return String.format("%s\n", this.getDescription());
     }
 }
+

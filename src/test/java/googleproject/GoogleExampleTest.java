@@ -1,10 +1,10 @@
-package com.qalabs.seleniumbasics.googleproject;
+package googleproject;
 
 import com.qalabs.javabasics.googleproject.page.GoogleMainPage;
 import com.qalabs.javabasics.googleproject.page.GoogleResultsPage;
+import com.qalabs.seleniumbasics.googleproject.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 
 public class GoogleExampleTest extends BaseTest {
 
@@ -23,8 +23,7 @@ public class GoogleExampleTest extends BaseTest {
     public void searchSomething() {
         GoogleMainPage home = new GoogleMainPage(myDriver);
 
-        GoogleResultsPage resultsPage;
-        resultsPage = home.searchInGoogle("Selenium");
+        GoogleResultsPage resultsPage = home.searchInGoogle("Selenium");
 
         Assert.assertTrue(resultsPage.isLoaded(), "Google results page is not loaded");
 
@@ -34,7 +33,9 @@ public class GoogleExampleTest extends BaseTest {
     @Test(priority = 2, dependsOnMethods = {"searchSomething"})
     public void clickOnResultByTitle() throws InterruptedException {
         GoogleResultsPage resultsPage = new GoogleResultsPage(myDriver);
+
         resultsPage.clickOnResultByTitle("Selenium - Wikipedia, la enciclopedia libre");
+
         Assert.assertEquals(myDriver.getCurrentUrl(), "https://es.wikipedia.org/wiki/Selenium", "First result is wrong");
     }
 }

@@ -1,4 +1,4 @@
-package com.qalabs.seleniumbasics.googleproject;
+package com.qalabs.seleniumbasics.project.facebook;
 
 import com.qalabs.seleniumbasics.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
@@ -24,4 +24,3 @@ public class BaseTest {
         myDriver.quit();
     }
 }
-

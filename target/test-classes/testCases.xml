@@ -7,7 +7,15 @@
                 <include name="passTC" />
             </methods>
         </class>
-    </classes>    
-    </test>
+    </classes>
+
+    <classes>
+        <class name="googleproject.GoogleExampleTest">
+            <methods>
+                <include name="validateGoogleURL" />
+            </methods>
+        </class>
+    </classes>
+</test>
 
 </suite>    

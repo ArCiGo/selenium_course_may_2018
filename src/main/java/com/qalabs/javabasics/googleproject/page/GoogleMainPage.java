@@ -4,40 +4,52 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class GoogleMainPage extends BasePage implements Page{
-    @FindBy(how = How.NAME, using = "q")
+public class GoogleMainPage extends BasePage {
+
+    public static final String BASE_URL = "https://www.google.com/";
+
+    @FindBy(how = How.ID, using = "hplogo")
+    private WebElement doddle;
+
+    @FindBy(how = How.ID, using = "lst-ib")
     private WebElement searchBox;
-
-    @FindBy(how = How.NAME, using = "btnK")
-    private WebElement searchInGoogleButton;
 
     @FindBy(how = How.NAME, using = "btnI")
     private WebElement feelingLuckyButton;
 
-    @FindBy(how = How.ID, using = "hplogo")
-    private WebElement doodle;
+    @FindBy(how = How.NAME, using = "btnK")
+    private WebElement seacrhInGoogleButton;
 
     public GoogleMainPage(WebDriver driver) {
-        super(driver, "");
-        this.doodle.submit();
+        super(driver);
+        PageFactory.initElements(driver, this);
     }
-    public GoogleResultsPage searchInGoogle(String searchTxt){
-        // Add Code
-        this.doodle.sendKeys("Selenium", searchTxt);
-        return null;
+
+    public GoogleResultsPage searchInGoogle(String seacrhTxt) {
+        searchBox.sendKeys(seacrhTxt);
+        seacrhInGoogleButton.click();
+        return new GoogleResultsPage(driver);
     }
-    public GoogleResultsPage feelingLuckySearch(String searchTxt){
-        // Add Code
-        searchTxt.contains(searchTxt);
-        return null;
+
+    public GoogleResultsPage searchInGoogleFeelingLucky(String seacrhTxt) {
+        searchBox.sendKeys(seacrhTxt);
+        feelingLuckyButton.click();
+        return new GoogleResultsPage(driver);
     }
 
     @Override
-    public boolean isLoaded(){
-        // Add Code
-        this.doodle.equals(searchInGoogleButton);
-        isLoaded();
-        return false;
+    public boolean isLoaded() {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 10);
+            wait.until(ExpectedConditions.visibilityOf(doddle));
+            return true;
+        } catch(RuntimeException exception) {
+            return false;
+        }
     }
+
 }
