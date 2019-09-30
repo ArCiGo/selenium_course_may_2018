@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteForExample4" verbose="1" >
+    <test name="Basic Regression" >
+        <parameter name="browser" value="firefox"></parameter>
+        <groups>
+            <run>
+                <exclude name="brokenTests"></exclude>
+            </run>
+        </groups>
+        
+        <classes>
+            <class name="com.qalabs.seleniumbasics.testngexamples.TestNGExample1"></class>
+        </classes>
+
+    </test>
+</suite>

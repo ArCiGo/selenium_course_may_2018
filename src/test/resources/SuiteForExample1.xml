@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteForExample1" verbose="1" >
+    <test name="Basic Test" >
+        <classes>
+            <class name="com.qalabs.seleniumbasics.testngexamples.TestNGExample1">
+                <methods>
+                    <include name="passTC" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
