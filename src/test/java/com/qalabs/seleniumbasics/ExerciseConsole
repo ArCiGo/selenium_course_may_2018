@@ -1,0 +1,40 @@
+*select first div child of body element
+ myDriver.findElement(By.xpath("//body/div[1]"));
+*select last div child of body element
+ myDriver.findElement(By.xpath("//body/div[last()]"));
+*select any element with attribute role equal to navigation
+ myDriver.findElement(By.xpath("//*[@role='navigation']"));
+*select any element contains nav under class attribute
+ myDriver.findElement(By.xpath("//*[contains(@class.'nav')]"));
+*select any element with type attribute equal submit and class attribute equal nav-input
+  myDriver.findElement(By.xpath("//*[@type='submit'and @class='nav-input']"));
+
+Ejercicios class and ID selector
+www.espn.com.mx
+ *find element with id gologal-viwport
+ documentquerySelector("#global-viwport")
+ *find element with class link-text
+ documentquerySelector(".link-text")
+ *find all elements
+ documentquerySelector("*")
+
+ Ejercicios Element selector
+ www.espn.com.mx
+ *select all a element whose father is a div
+ documentquerySelector("div>a")
+ *select all a elemnts inside a li element
+ documentquerySelector("li a")
+ *select al li elemts placed after a li
+ documentquerySelector("li + li")
+ *select all article preceded by a div
+ documentquerySelector("article~div")
+
+ Ejercicios Attribute selector
+ www.espn.com.mx
+*select all article element with attribute id
+documentquerySelector("article[id]")
+*select all article elements with class attribute equal to sub-module quicklinks
+documentquerySelector("article[class='sub-module quicklinks']")
+*select any element containing word user-account-managment in class attribute
+documentquerySelector("[class~=user-account-managment]")
+

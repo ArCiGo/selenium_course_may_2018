@@ -1,5 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="testCases" verbose="1">
+<<<<<<< HEAD
     <test name="Basic Regresion">
     <classes>
         <class name="testngexample.TestNGExample1">
@@ -16,6 +17,20 @@
             </methods>
         </class>
     </classes>
-</test>
+    </test>
+    <test name="Basic Regresion">
+        <classes>
+            <class name="testngexample.TestNGExample1">
+                <methods>
+                    <include name="openGoogle"/>
+                </methods>>
+            </class>
+        </classes>
+    </test>
 
-</suite>    
+</suite>
+
+
+
+
+>>>>>>> 403dc249fffcaa6f2a96617a1d8298ad672d653b

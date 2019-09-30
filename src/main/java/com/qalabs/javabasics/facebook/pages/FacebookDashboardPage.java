@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FacebookDashboardPage {
-    public static  final String BASE_URL = "https://www.facebook.com";
+    public static final String BASE_URL = "https://www.facebook.com";
     @FindBy(how = How.XPATH, using = "//*[@id=\"blueBarDOMInspector\"]/div/div/div/div[1]/h1/a/is")
     private WebElement home;
 
@@ -28,8 +28,8 @@ public class FacebookDashboardPage {
     private WebElement loginInFacebookButton;
 
     public FacebookDashboardPage(WebDriver driver) {
-        super(mydriver);
-        PageFactory.initElements(driver, this);
+        super( mydriver );
+        PageFactory.initElements( driver, this );
     }
 
     public FacebookLoginPage home(String home) {
@@ -38,22 +38,21 @@ public class FacebookDashboardPage {
     }
 
     public LoginBodyComponent inputEmail(String txtEmail) {
-        inputEmail.sendKeys(txtEmail);
+        inputEmail.sendKeys( txtEmail );
 
-    }
 
-    public LoginBodyComponent inputPass(String txtPass){
 
-    }
+    public LoginBodyComponent inputPass(String txtPass) {
 
-    @Override
-    public boolean isLoaded() {
-        try {
-            WebDriverWait wait = new WebDriverWait(myDriver, 10);
-            wait.until(ExpectedConditions.visibilityOf(doddle));
-            return true;
-        } catch(RuntimeException exception) {
-            return false;
+        @Override
+        public boolean isLoaded () {
+            try {
+                WebDriverWait wait = new WebDriverWait( myDriver, 10 );
+                wait.until( ExpectedConditions.visibilityOf( doddle ) );
+                return true;
+            } catch (RuntimeException exception) {
+                return false;
+            }
         }
     }
 }
