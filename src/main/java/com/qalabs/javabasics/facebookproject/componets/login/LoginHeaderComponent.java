@@ -17,9 +17,9 @@ public class LoginHeaderComponent extends FacebookComponent{
         private WebElement fbUserInputElement;
         @FindBy(how = How.ID, using = "pass")
         private WebElement fbPassInputElement;
-        @FindBy(how = How.ID, using = "u_0_4")
-        private WebElement fbForgotPassLinkElement;
         @FindBy(how = How.XPATH, using = "//*[@id='login_form']/table/tbody/tr[3]/td[2]/div/a")
+        private WebElement fbForgotPassLinkElement;
+        @FindBy(how = How.XPATH, using = "//*[@id='u_0_2']")
         private WebElement fbLoginButtonElement;
 
         public LoginHeaderComponent(WebDriver driver) {
@@ -35,7 +35,7 @@ public class LoginHeaderComponent extends FacebookComponent{
     public FacebookLoginPage logInFacebook(String userName, String password) {
         fbUserInputElement.sendKeys(userName);
         fbPassInputElement.sendKeys(password);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         fbLoginButtonElement.click();
         return new FacebookLoginPage(driver);
     }
